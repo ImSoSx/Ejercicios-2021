@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ejercicio_25_03
 {
     public partial class Form1 : Form
     {
-        int suma;
+        private int suma;
+
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +20,7 @@ namespace Ejercicio_25_03
             }
             else
             {
-                if((int)e.KeyChar == (int)Keys.Enter)
+                if ((int)e.KeyChar == (int)Keys.Enter)
                 {
                     numeroDos_txt.Focus();
                 }
@@ -58,10 +52,16 @@ namespace Ejercicio_25_03
 
         private void suma_btn_Click(object sender, EventArgs e)
         {
-            
-            suma = Int32.Parse(numeroUno_txt.Text) + Int32.Parse(numeroDos_txt.Text);
-            MessageBox.Show("La Suma Es: " + suma);
-            siguiente_btn.Focus();
+            try
+            {
+                suma = Int32.Parse(numeroUno_txt.Text) + Int32.Parse(numeroDos_txt.Text);
+                MessageBox.Show("La Suma Es: " + suma);
+                siguiente_btn.Focus();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Error al ejecutar el programa \nVerifica los datos ingresados e intentalo otra vez");
+            }
+
         }
 
         private void siguiente_btn_Click(object sender, EventArgs e)
