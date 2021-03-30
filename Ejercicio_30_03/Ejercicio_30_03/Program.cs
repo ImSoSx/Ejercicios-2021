@@ -31,7 +31,7 @@ namespace Ejercicio_30_03
                 {
                     miEmpleado.sueldoBase = 0;
                 }
-            } while (miEmpleado.sueldoBase <= 0);
+            } while (miEmpleado.sueldoBase <= 0||miEmpleado.nombre=="");
             Console.WriteLine("Su sueldo es " + miEmpleado.nombre);
             Console.WriteLine("Su sueldo es " + miEmpleado.calcularSueldo());
             Console.WriteLine("Su Sueldo base es: " + miEmpleado.sueldoBase);

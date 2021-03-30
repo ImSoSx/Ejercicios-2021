@@ -5,7 +5,8 @@
 *.suo
 *.user
 *.sln.docstates
-
+*.v2
+*.dtbcache.v2
 # Build results
 
 [Dd]ebug/
@@ -129,5 +130,6 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
-
+.vs
 _NCrunch*
+*.v2
