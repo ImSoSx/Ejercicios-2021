@@ -44,7 +44,6 @@ namespace Ejercicio1Clase1
             this.lbl_txt.TabIndex = 0;
             this.lbl_txt.Text = "Programacion Avanzada";
             this.lbl_txt.Visible = false;
-            this.lbl_txt.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_txt
             // 

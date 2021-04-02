@@ -42,6 +42,7 @@ namespace Ejercicio_30_03_02
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtCantHoras
             // 
@@ -49,6 +50,7 @@ namespace Ejercicio_30_03_02
             this.txtCantHoras.Name = "txtCantHoras";
             this.txtCantHoras.Size = new System.Drawing.Size(100, 23);
             this.txtCantHoras.TabIndex = 1;
+            this.txtCantHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantHoras_KeyPress);
             // 
             // label1
             // 
